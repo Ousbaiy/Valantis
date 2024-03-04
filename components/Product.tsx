@@ -26,7 +26,7 @@ const Product: React.FC = () => {
     fetchData,
   } = useProduct();
 
-  const [typingTimer, setTypingTimer] = useState<number | null>(null);
+  const [typingTimer, setTypingTimer] = useState<NodeJS.Timeout | null>(null);
 
   console.log(productData);
 
